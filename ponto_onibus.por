@@ -1,4 +1,5 @@
 programa {
+    cadeia nome
     inteiro i
 		cadeia rota[] = { "ÔNIBUS 01", "ÔNIBUS 02" , "ÔNIBUS 03", "ÔNIBUS 04", "ÔNIBUS 05" }
     cadeia horarios[][] = {
@@ -9,8 +10,10 @@ programa {
         {"06:30", "08:00", "10:30", "12:30", "15:30"}
     }
   funcao inicio() {
+    escreva("Digite seu nome:")
+    leia(nome)
     inteiro opcao
-    escreva("VOCÊ DESEJA ACESSAR O HORÁRIO DE QUAL ÔNIBUS ? ")
+    escreva(nome,", você deseja ver o hoário de qual Ônibus ? ")
     escreva("\n1) ÔNIBUS 01")
     escreva("\n2) ÔNIBUS 02")
     escreva("\n3) ÔNIBUS 03")
